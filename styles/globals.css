@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    background-color: #575757;
+    color: white;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+}
