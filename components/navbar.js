@@ -1,5 +1,27 @@
-import Image from "next/image";
 import Link from "next/link";
+
+const navItems = [
+  {
+    name: "About",
+    href: "about",
+  },
+  {
+    name: "Skills",
+    href: "skills",
+  },
+  {
+    name: "Projects",
+    href: "projects",
+  },
+  {
+    name: "Blog",
+    href: "blog",
+  },
+  {
+    name: "Contact",
+    href: "contact",
+  },
+];
 
 const Navbar = () => {
   return (
@@ -10,40 +32,20 @@ const Navbar = () => {
         </h2>
 
         <ul className="text-lg font-quicksand flex items-center gap-6 text-white">
-          <li>
-            <Link href="#about">
-              <a className="transition hover:text-white/75">About</a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#skills">
-              <a className="transition hover:text-white/75">Skills</a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#projects">
-              <a className="transition hover:text-white/75">Projects</a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#blog">
-              <a className="transition hover:text-white/75">Blog</a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#contact">
-              <a className="transition hover:text-white/75">Contact</a>
-            </Link>
-          </li>
+          {navItems.map((item, i) => (
+            <li key={i}>
+              <Link href={"#" + item.href}>
+                <a className="transition hover:text-white/75">{item.name}</a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
 
       <div className="block md:hidden">
-        <button className="p-2 text-white transition rounded hover:text-white/75">
+        <button
+          className="p-2 text-white transition rounded hover:text-white/75"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-7 h-7"

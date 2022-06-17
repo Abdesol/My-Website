@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Navbar from "./navBar";
 import Title from "./title";
 
 const About = ({ id }) => {
