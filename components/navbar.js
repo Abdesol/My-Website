@@ -43,9 +43,7 @@ const Navbar = () => {
       </nav>
 
       <div className="block md:hidden">
-        <button
-          className="p-2 text-white transition rounded hover:text-white/75"
-        >
+        <button className="p-2 text-white transition rounded hover:text-white/75">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-7 h-7"

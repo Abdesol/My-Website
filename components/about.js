@@ -1,13 +1,12 @@
 import Image from "next/image";
-import Navbar from "./navBar";
 import Title from "./title";
 
 const About = ({ id }) => {
   return (
-    <div id={id}>
+    <div id={id} className="my-14">
       <Title title="About"/>
       <div className="flex flex-col items-center justify-center md:flex-row md:justify-start md:items-start">
-        <p className="mt-10 grow font-quicksand text-xl text-textDark md:w-1/2">
+        <p className="grow font-quicksand text-xl text-textDark md:w-1/2">
           I am a 17 years old programmer since July 2020 and I have been workin
           with many programming languages and frameworks.
           <br />

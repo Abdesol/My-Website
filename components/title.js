@@ -1,6 +1,6 @@
 const Title = ({ title }) => {
   return (
-    <div>
+    <div className="my-7">
       <h2 className="text-5xl font-quicksand font-bold">
         {title ?? "Title"}
       </h2>
