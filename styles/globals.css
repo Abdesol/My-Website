@@ -11,3 +11,5 @@
   font-family: "Quicksand";
   src: url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 }
+
+summary::-webkit-details-marker { display: none }
