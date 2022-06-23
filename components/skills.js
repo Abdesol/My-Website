@@ -53,7 +53,7 @@ const Skills = ({ id }) => {
         {skills.map((skill, i) => (
           <motion.a
             key={i}
-            className="cursor-pointer relative m-4 h-12 w-12 md:h-24 md:w-24"
+            className="cursor-pointer relative m-4 h-12 w-12 md:h-20 md:w-20"
             href={skill.url}
             target="_blank"
             rel="noreferrer"
