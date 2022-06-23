@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex sticky top-0 bottom-10 self-stretch items-center px-4 mx-auto">
+      <div className="flex sticky top-0 z-[1000] bottom-10 self-stretch items-center px-4 mx-auto">
         <nav
           className="hidden md:block z-10 w-screen py-4 h-16"
           aria-labelledby="header-navigation"
