@@ -47,7 +47,7 @@ const Projects = ({ id }) => {
     <div id={id} className="my-14">
       <Title title="Projects" />
       <div className="flex flex-col items-center">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap self-start">
           {projects.map((project, i) => (
             <motion.a
               key={i}
