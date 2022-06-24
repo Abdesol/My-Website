@@ -16,12 +16,12 @@ const navItems = [
     href: "projects",
   },
   {
-    name: "Blog",
-    href: "blog",
+    name: "Blogs",
+    href: "blogs",
   },
   {
-    name: "Contact",
-    href: "contact",
+    name: "Contacts",
+    href: "contacts",
   },
 ];
 

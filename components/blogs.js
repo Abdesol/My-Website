@@ -27,10 +27,10 @@ const blogs = [
   },
 ];
 
-const Blog = ({ id }) => {
+const Blogs = ({ id }) => {
   return (
     <div id={id} className="my-14">
-      <Title title="Blog" />
+      <Title title="Blogs" />
       <div className="flex flex-col items-center">
         <div className="flex flex-wrap self-start">
           {blogs.map((blog, i) => (
@@ -75,4 +75,4 @@ const Blog = ({ id }) => {
   );
 };
 
-export default Blog;
+export default Blogs;

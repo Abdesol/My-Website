@@ -1,5 +1,6 @@
 import About from "../components/about";
-import Blog from "../components/blog";
+import Blogs from "../components/blogs";
+import Contacts from "../components/contacts";
 import Projects from "../components/projects";
 import Skills from "../components/skills";
 
@@ -15,7 +16,8 @@ export default function Home() {
       <About id="about" />
       <Skills id="skills" />
       <Projects id="projects" />
-      <Blog id="blog" />
+      <Blogs id="blogs" />
+      <Contacts id="contacts" />
     </div>
   );
 }
