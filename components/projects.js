@@ -82,7 +82,7 @@ const Projects = ({ id }) => {
         </div>
         <Link href="https://github.com/Abdesol?tab=repositories">
           <a
-            class="inline-block w-[8.5rem] my-3 px-8 py-3 text-sm font-medium text-white transition bg-[#404040] rounded hover:scale-110 hover:shadow-xl active:bg-[#404040] focus:outline-none focus:ring"
+            className="inline-block w-[8.5rem] my-3 px-8 py-3 text-sm font-medium text-white transition bg-[#404040] rounded hover:scale-110 hover:shadow-xl active:bg-[#404040] focus:outline-none focus:ring"
             target="_blank"
           >
             View More
