@@ -24,6 +24,15 @@ const skills = [
     url: "https://dotnet.microsoft.com/en-us/apps/xamarin",
   },
   {
+    path: "machine_learning",
+    url: "https://en.wikipedia.org/wiki/Machine_learning",
+  },
+  ,
+  {
+    path: "data_analysis",
+    url: "https://en.wikipedia.org/wiki/Data_analysis",
+  },
+  {
     path: "maui",
     url: "https://docs.microsoft.com/en-us/dotnet/maui/",
   },
