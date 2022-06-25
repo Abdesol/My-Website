@@ -42,9 +42,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex sticky top-0 z-[1000] bottom-10 self-stretch items-center px-4 mx-auto">
+      <div className="flex sticky top-0 z-[1000] bottom-16 w-full items-center px-4 mx-auto min-w-[450px]">
         <nav
-          className="hidden md:block z-10 w-screen py-4 h-16"
+          className="hidden md:block z-10 w-full py-4 h-16"
           aria-labelledby="header-navigation"
         >
           <h2 className="sr-only" id="header-navigation">
@@ -61,11 +61,11 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-        <div className="md:hidden flex justify-end w-screen h-16">
+        <div className="md:hidden flex justify-end w-full h-16">
           <button
             data-collapse-toggle="mobile-menu"
             onClick={showMenu}
-            className="p-2 text-white transition rounded hover:text-white/75"
+            className="p-0 text-white transition rounded hover:text-white/75"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ const Navbar = () => {
           initial="hidden"
           animate="visible"
           variants={variants}
-          className="w-screen fixed z-10"
+          className="w-full fixed z-10"
         >
           <nav className="md:hidden" aria-labelledby="header-navigation">
             <h2 className="sr-only" id="header-navigation">
@@ -100,7 +100,7 @@ const Navbar = () => {
               {navItems.map((item, i) => (
                 <li className="py-2" key={i}>
                   <Link href={"#" + item.href}>
-                    <a className="transition hover:text-white/75">
+                    <a className="transition hover:text-white/75"  onClick={() => setShow(false)}>
                       {item.name}
                     </a>
                   </Link>
