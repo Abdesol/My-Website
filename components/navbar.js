@@ -44,7 +44,7 @@ const Navbar = () => {
     <>
       <div className="flex sticky top-0 z-[1000] bottom-16 w-full items-center px-4 mx-auto min-w-[450px]">
         <nav
-          className="hidden md:block z-10 w-full py-4 h-16"
+          className="hidden md:block z-10 w-full py-4 h-16 mr-5"
           aria-labelledby="header-navigation"
         >
           <h2 className="sr-only" id="header-navigation">
