@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { FC } from "react";
 
-const ContactButton = ({ link, name, icon, marginLeft }) => {
+const Contactbutton = ({ link, name, icon, marginLeft }) => {
   return (
     <div>
       <a
@@ -25,4 +25,4 @@ const ContactButton = ({ link, name, icon, marginLeft }) => {
   );
 };
 
-export default ContactButton;
+export default Contactbutton;

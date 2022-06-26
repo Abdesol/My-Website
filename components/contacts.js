@@ -1,4 +1,4 @@
-import ContactButton from "./ContactButton";
+import Contactbutton from "./contactbutton";
 import Title from "./title";
 
 const contacts = [
@@ -41,7 +41,7 @@ const Contacts = ({ id }) => {
       <div className="flex flex-wrap items-center justify-center mx-auto">
         {contacts.map((link, i) => (
           <div key={i}>
-            <ContactButton
+            <Contactbutton
               marginLeft={i === 0 ? "ml-0" : "ml-6 md:ml-10"}
               name={link.name}
               icon={link.icon + ".svg"}
