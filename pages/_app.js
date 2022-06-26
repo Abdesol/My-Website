@@ -19,8 +19,8 @@ function MyApp({ Component, pageProps }) {
           images: [
             {
               url: `${data.website}/logo.png`,
-              width: 800,
-              height: 420,
+              width: 150,
+              height: 150,
               alt: data.name,
             },
           ],
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         twitter={{
           handle: "@AbdellaSolomon",
           site: "@AbdellaSolomon",
-          cardType: "summary_large_image",
+          cardType: "summary",
         }}
       />
       <Layout>
