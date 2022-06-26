@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const navItems = [
   {
@@ -42,34 +43,38 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex sticky top-0 z-[1000] bottom-16 w-full items-center px-4 mx-auto min-w-[450px]">
+      <div
+        className="bg-[#3d4451]/30 backdrop-blur-md flex sticky top-0 z-[1000] bottom-16 w-full items-center px-4 mx-auto min-w-[450px]"
+      >
         <nav
-          className="hidden md:block z-10 w-full py-4 h-16 mr-5"
+          className="hidden md:block z-10 w-full py-4 h-16 mr-5 bg-inherit"
           aria-labelledby="header-navigation"
         >
           <h2 className="sr-only" id="header-navigation">
             Header Navigation
           </h2>
 
-          <ul className="text-lg font-quicksand flex justify-end items-center gap-6 text-white">
+          <ul className="text-lg font-quicksand flex justify-end items-center gap-6 text-white bg-transparent">
             {navItems.map((item, i) => (
-              <li key={i}>
+              <li key={i} className="bg-inherit">
                 <Link href={"#" + item.href}>
-                  <a className="transition hover:text-white/75">{item.name}</a>
+                  <a className="transition hover:text-white/75 bg-inherit text-[18px]">
+                    {item.name}
+                  </a>
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <div className="md:hidden flex justify-end w-full h-16">
+        <div className="md:hidden flex justify-end w-full h-16 bg-inherit">
           <button
             data-collapse-toggle="mobile-menu"
             onClick={showMenu}
-            className="p-0 text-white transition rounded hover:text-white/75"
+            className="p-0 text-white transition rounded hover:text-white/75 bg-inherit"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-7 h-7"
+              className="w-7 h-7 bg-inherit"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -89,18 +94,24 @@ const Navbar = () => {
           initial="hidden"
           animate="visible"
           variants={variants}
-          className="w-full fixed z-10"
+          className="w-full fixed z-10 bg-[#3d4451]/30 backdrop-blur-md"
         >
-          <nav className="md:hidden" aria-labelledby="header-navigation">
+          <nav
+            className="md:hidden bg-inherit"
+            aria-labelledby="header-navigation"
+          >
             <h2 className="sr-only" id="header-navigation">
               Header navigation
             </h2>
 
-            <ul className="text-lg font-quicksand gap-6 text-center text-white px-10">
+            <ul className="text-lg font-quicksand gap-6 text-center text-white px-10 bg-transparent">
               {navItems.map((item, i) => (
-                <li className="py-2" key={i}>
+                <li className="py-2 bg-inherit" key={i}>
                   <Link href={"#" + item.href}>
-                    <a className="transition hover:text-white/75"  onClick={() => setShow(false)}>
+                    <a
+                      className="transition hover:text-white/75 bg-inherit text-[18px]"
+                      onClick={() => setShow(false)}
+                    >
                       {item.name}
                     </a>
                   </Link>

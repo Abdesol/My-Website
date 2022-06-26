@@ -63,7 +63,7 @@ const Projects = ({ id }) => {
                 },
               }}
             >
-              <div className="p-2 bg-[#404040] rounded w-[400px] h-[320px]">
+              <div className="p-2 bg-[#333A48] rounded w-[400px] h-[320px]">
                 <Image
                   className="rounded"
                   height={200}
@@ -82,7 +82,7 @@ const Projects = ({ id }) => {
         </div>
         <Link href="https://github.com/Abdesol?tab=repositories">
           <a
-            className="inline-block w-[8.5rem] my-3 px-8 py-3 text-sm font-medium text-white transition bg-[#404040] rounded hover:scale-110 hover:shadow-xl active:bg-[#404040] focus:outline-none focus:ring"
+            className="inline-block w-[8.5rem] my-3 px-8 py-3 text-sm font-medium text-white transition bg-[#333A48] rounded hover:scale-110 hover:shadow-xl active:bg-[#333A48] focus:outline-none focus:ring"
             target="_blank"
           >
             View More
