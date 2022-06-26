@@ -66,7 +66,7 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-        <div className="md:hidden flex justify-end w-full h-16 bg-inherit">
+        <div className="md:hidden flex justify-end w-full h-16 bg-transparent">
           <button
             data-collapse-toggle="mobile-menu"
             onClick={showMenu}
