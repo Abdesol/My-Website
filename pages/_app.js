@@ -2,6 +2,7 @@ import data from "../public/data.json";
 import { NextSeo } from "next-seo";
 import Layout from "../components/layout";
 import "../styles/globals.css";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -37,6 +38,9 @@ function MyApp({ Component, pageProps }) {
           cardType: "app",
         }}
       />
+      <Head>
+        <link rel="shortcut icon" href="/logo.ico" />
+      </Head>
       <Layout>
         <Component {...pageProps} />
       </Layout>
