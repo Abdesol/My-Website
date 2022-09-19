@@ -5,10 +5,22 @@ import Link from "next/link";
 
 const projects = [
   {
+    title: "Paddy Disease Classifer",
+    desc: "A web app that classifies paddy diseases from a paddy plant.",
+    path: "paddy",
+    url: "https://github.com/EthioAI/Paddy-Disease-Classification",
+  },
+  {
     title: "CutCode",
     desc: "A tool for programmers to work efficently and save tons of stuff!",
     path: "cutcode",
     url: "https://github.com/Abdesol/CutCode",
+  },
+  {
+    title: "Malaria Cell Predictor",
+    desc: "A web app that predicts if a cell is infected with malaria or not.",
+    path: "malaria",
+    url: "https://github.com/EthioAI/Malaria-Cell-Predictor",
   },
   {
     title: "YoChat",
@@ -23,16 +35,16 @@ const projects = [
     url: "https://github.com/Champions-clan/Robert-Assistant",
   },
   {
+    title: "Cartoonify Image",
+    desc: "A model that cartoonifies an image.",
+    path: "cartoonify",
+    url: "https://github.com/Abdesol/Cartoonify-Image",
+  },
+  {
     title: "Notee",
     desc: "A simple mobile note app to save your notes.",
     path: "notee",
     url: "https://github.com/Abdesol/Notee",
-  },
-  {
-    title: "Translator",
-    desc: "A translator app for translating between variety of languages.",
-    path: "translator",
-    url: "https://github.com/Abdesol/Translator",
   },
   {
     title: "Weathera",
