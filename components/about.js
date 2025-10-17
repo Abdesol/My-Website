@@ -7,7 +7,7 @@ const About = ({ id }) => {
       <Title title="About"/>
       <div className="flex flex-col items-center justify-center md:flex-row md:justify-start md:items-start">
         <p className="grow font-quicksand text-xl text-textDark md:w-1/2">
-          I am a .NET developer specializing in desktop applications and backend development.
+          I am a full-stack developer specializing in desktop applications and backend development with .NET
           <br />
           Additionally, I do automations in python and learn mathematics as a hobby. I love to learn and adapt
           to new technologies.
