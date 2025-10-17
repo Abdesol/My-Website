@@ -14,9 +14,6 @@ const About = ({ id }) => {
           specifically, I am focused on Artifical Intelligence and machine
           learning. I love to learn new things and adapt to new technologies.
         </p>
-        <div className="relative mx-10 mt-5  md:-mt-12">
-          <Image src="/logo.png" width={300} height={300} />
-        </div>
       </div>
     </div>
   );
