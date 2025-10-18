@@ -1,6 +1,7 @@
 import data from "../public/data.json";
 import { NextSeo } from "next-seo";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/next';
 import Layout from "../components/layout";
 import "../styles/globals.css";
 import Head from "next/head";
@@ -44,6 +45,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Layout>
         <Component {...pageProps} />
+        <Analytics />
         <SpeedInsights />
       </Layout>
     </>
